@@ -35,11 +35,18 @@ export class LoginPage {
     await expect(this.signInButton).toBeVisible()
   }
 
-  async chechValidationError(): Promise<void> {
-    // example of similar elements workaround
-    await this.usernameField.fill('2')
-    await this.passwordField.fill('2')
-    await expect(this.valError.nth(0)).toBeVisible()
-    await expect(this.valError.nth(1)).toBeVisible()
+  async checkValidationError(index: number, visible: boolean): Promise<void> {
+    await expect(this.valError.nth(index)).toBeVisible({ visible })
+  }
+
+  async checkLoginBtnEnabled(enabled: boolean): Promise<void> {
+    await expect(this.signInButton).toBeEnabled({ enabled })
+  }
+
+  async validationByClassIndex(index: number): Promise<Locator> {
+    return this.page
+      .locator('[class="login__fieldset fieldset"]')
+      .nth(index)
+      .locator('[class*="form-error"]')
   }
 }
