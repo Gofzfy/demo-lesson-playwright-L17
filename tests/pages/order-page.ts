@@ -43,6 +43,6 @@ export class OrderPage {
   }
 
   async checkCreateOrderBtnEnabled(enabled: boolean): Promise<void> {
-    await expect(this.createOrderButton).toBeEnabled({ enabled})
+    await expect(this.createOrderButton).toBeEnabled({ enabled })
   }
 }

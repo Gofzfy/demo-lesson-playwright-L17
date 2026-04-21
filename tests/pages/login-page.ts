@@ -31,6 +31,5 @@ export class LoginPage {
     await expect(this.usernameField).toBeVisible()
     await expect(this.passwordField).toBeVisible()
     await expect(this.signInButton).toBeVisible()
-
   }
 }

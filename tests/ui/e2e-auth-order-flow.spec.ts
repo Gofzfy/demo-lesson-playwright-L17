@@ -3,7 +3,6 @@ import { LoginPage } from '../pages/login-page'
 import { faker } from '@faker-js/faker/locale/ar'
 import { PASSWORD, USERNAME } from '../../config/env-data'
 
-
 test('Login test plus order page components check', async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.open()
