@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test'
+import { expect, Locator, Page } from '@playwright/test'
 import { OrderPage } from './order-page'
 import { SERVICE_URL } from '../../config/env-data'
 
@@ -8,14 +8,14 @@ export class LoginPage {
   readonly signInButton: Locator
   readonly usernameField: Locator
   readonly passwordField: Locator
-  // add more locators here
+  readonly valError: Locator
 
   constructor(page: Page) {
     this.page = page
     this.signInButton = page.getByTestId('signIn-button')
     this.usernameField = page.getByTestId('username-input')
     this.passwordField = page.getByTestId('password-input')
-    // continue with the rest of the implementation below
+    this.valError = page.getByTestId('username-input-error')
   }
 
   async open() {
@@ -29,5 +29,24 @@ export class LoginPage {
     return new OrderPage(this.page)
   }
 
-  // continue with the rest of the implementation below
+  async checkInnerComponents(): Promise<void> {
+    await expect(this.usernameField).toBeVisible()
+    await expect(this.passwordField).toBeVisible()
+    await expect(this.signInButton).toBeVisible()
+  }
+
+  async checkValidationError(index: number, visible: boolean): Promise<void> {
+    await expect(this.valError.nth(index)).toBeVisible({ visible })
+  }
+
+  async checkLoginBtnEnabled(enabled: boolean): Promise<void> {
+    await expect(this.signInButton).toBeEnabled({ enabled })
+  }
+
+  async validationByClassIndex(index: number): Promise<Locator> {
+    return this.page
+      .locator('[class="login__fieldset fieldset"]')
+      .nth(index)
+      .locator('[class*="form-error"]')
+  }
 }
