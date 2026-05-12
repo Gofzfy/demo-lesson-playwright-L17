@@ -1,18 +1,19 @@
 import { expect, Locator, Page } from '@playwright/test'
 import { OrderPage } from './order-page'
 import { SERVICE_URL } from '../../config/env-data'
+import { BasePage } from './base-page'
+import { Button } from '../atoms/Button'
 
-export class LoginPage {
-  readonly page: Page
+export class LoginPage extends BasePage {
   readonly url: string = SERVICE_URL
-  readonly signInButton: Locator
+  readonly signInButton: Button
   readonly usernameField: Locator
   readonly passwordField: Locator
   readonly valError: Locator
 
   constructor(page: Page) {
-    this.page = page
-    this.signInButton = page.getByTestId('signIn-button')
+    super(page)
+    this.signInButton = new Button(page.getByTestId('signIn-button'))
     this.usernameField = page.getByTestId('username-input')
     this.passwordField = page.getByTestId('password-input')
     this.valError = page.getByTestId('username-input-error')
@@ -32,7 +33,7 @@ export class LoginPage {
   async checkInnerComponents(): Promise<void> {
     await expect(this.usernameField).toBeVisible()
     await expect(this.passwordField).toBeVisible()
-    await expect(this.signInButton).toBeVisible()
+    await this.signInButton.checkVisible(true)
   }
 
   async checkValidationError(index: number, visible: boolean): Promise<void> {
@@ -40,7 +41,7 @@ export class LoginPage {
   }
 
   async checkLoginBtnEnabled(enabled: boolean): Promise<void> {
-    await expect(this.signInButton).toBeEnabled({ enabled })
+    await this.signInButton.checkEnabled(enabled)
   }
 
   async validationByClassIndex(index: number): Promise<Locator> {

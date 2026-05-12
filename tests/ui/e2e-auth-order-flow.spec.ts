@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { test } from '@playwright/test'
 import { LoginPage } from '../pages/login-page'
 import { faker } from '@faker-js/faker/locale/ar'
 import { PASSWORD, USERNAME } from '../../config/env-data'
@@ -7,7 +7,7 @@ test('Login test plus order page status button check', async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.open()
   const orderPage = await loginPage.signIn(USERNAME, PASSWORD)
-  await expect(orderPage.statusButton).toBeVisible()
+  await orderPage.statusButton.checkVisible(true)
 })
 
 test('Login and order page components check', async ({ page }) => {
@@ -31,21 +31,23 @@ test('Validation test on order creation', async ({ page }) => {
 
   await orderPage.nameInput.fill('1')
   await orderPage.phoneInput.fill(faker.phone.number())
-  await orderPage.checkCreateOrderBtnEnabled(false)
+  await orderPage.createOrderButton.checkEnabled(false)
 
   await orderPage.nameInput.fill(faker.person.firstName())
   await orderPage.phoneInput.fill('2')
-  await orderPage.checkCreateOrderBtnEnabled(false)
+  await orderPage.createOrderButton.checkEnabled(false)
 
   await orderPage.nameInput.fill(faker.person.firstName())
   await orderPage.phoneInput.fill(faker.phone.number())
-  await orderPage.checkCreateOrderBtnEnabled(true)
+  await orderPage.createOrderButton.checkEnabled(true)
 })
 
 test('Logout test', async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.open()
+  await loginPage.checkFooterComponents()
   const orderPage = await loginPage.signIn(USERNAME, PASSWORD)
+  await orderPage.checkFooterComponents()
   await orderPage.logoutButton.click()
   await loginPage.checkInnerComponents()
 })
