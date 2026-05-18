@@ -1,11 +1,12 @@
 import { BasePage } from './base-page'
 import { expect, Locator, Page } from '@playwright/test'
+import { SERVICE_URL } from '../../config/env-data'
 
 export class OrderDetailsPage extends BasePage {
   readonly details: Locator
 
   constructor(page: Page) {
-    super(page)
+    super(page, SERVICE_URL)
     this.details = this.page.locator('.order-details')
   }
 

@@ -1,18 +1,30 @@
 import { test } from '@playwright/test'
 import { PASSWORD, USERNAME } from '../../config/env-data'
 import { LoginPage } from '../pages/login-page'
+import { OrderPage } from '../pages/order-page'
 import { ENDPOINTS } from '../../utils/endpoints'
 import { TEST_DATA } from '../../utils/TestData'
 import { fakeJwt } from '../../utils/jwt'
 
-test.describe('Mocked order flows', async () => {
-  test('Mocked order creation', async ({ page }) => {
-    const loginPage = new LoginPage(page)
-    await loginPage.open()
-    await page.route(`**${ENDPOINTS.STUDENTS}`, async (route) => {
-      await route.fulfill({ body: fakeJwt() })
+test.describe('Mocked order flows', () => {
+  test('Mocked order creation', async ({ context }) => {
+    const page = await context.newPage()
+    const orderPage = new OrderPage(page)
+    const jwt = fakeJwt()
+
+    await context.addInitScript((token) => {
+      localStorage.setItem('jwt', token)
+    }, jwt)
+
+    await page.route(`**${ENDPOINTS.ORDERS}`, async (route) => {
+      await route.fulfill({
+        status: 200,
+        json: TEST_DATA.CREATE_ORDER_RESPONSE,
+        contentType: 'application/json',
+      })
     })
-    const orderPage = await loginPage.signIn(USERNAME, PASSWORD)
+
+    await orderPage.open()
     await page.route(`**${ENDPOINTS.ORDERS}`, async (route) => {
       await route.fulfill({
         status: 200,

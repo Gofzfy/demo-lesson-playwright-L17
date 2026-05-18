@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74c1536-1233-442f-bcb3-87c2561b3a44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/TestData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/endpoints.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/jwt.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/delivery.fixture.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ui/fixtures-lesson-23.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/playwright.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/playwright.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/env-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pages/base-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/base-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pages/login-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/login-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pages/order-details-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-details-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pages/order-not-found-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-not-found-page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/pages/order-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,11 @@
     "Playwright.Login test plus order page components check.executor": "Run",
     "Playwright.Login test plus order page status button check.executor": "Run",
     "Playwright.Logout test.executor": "Run",
+    "Playwright.Mocked order flows.Logout with fixture.executor": "Run",
     "Playwright.Mocked order flows.Mocked order creation.executor": "Run",
+    "Playwright.Mocked order flows.Not-found order with fixture.executor": "Run",
+    "Playwright.Mocked order flows.Order creation with fixture.executor": "Run",
+    "Playwright.Mocked order flows.executor": "Run",
     "Playwright.Not found page test.executor": "Run",
     "Playwright.Validation test on order creation.executor": "Run",
     "Playwright.error message displayed when incorrect credentials used.executor": "Run",
@@ -75,7 +81,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "feat/vp/TL22",
+    "git-widget-placeholder": "#3 on feat/vp/TL22",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "node.js.detected.package.eslint": "true",
@@ -95,27 +101,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Playwright.Mocked order flows.Mocked order creation">
-    <configuration name="Login test plus order page status button check" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="Mocked order flows" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/ui/e2e-auth-order-flow.spec.ts" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" />
       <test-names>
-        <test-name value="Login test plus order page status button check" />
+        <test-name value="Mocked order flows" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Logout test" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="Mocked order flows.Logout with fixture" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/ui/e2e-auth-order-flow.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/ui/fixtures-lesson-23.spec.ts" />
       <test-names>
-        <test-name value="Logout test" />
+        <test-name value="Mocked order flows" />
+        <test-name value="Logout with fixture" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -132,37 +139,39 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Not found page test" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="Mocked order flows.Not-found order with fixture" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/ui/e2e-search-order.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/ui/fixtures-lesson-23.spec.ts" />
       <test-names>
-        <test-name value="Not found page test" />
+        <test-name value="Mocked order flows" />
+        <test-name value="Not-found order with fixture" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="signIn button disabled when incorrect data inserted" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="Mocked order flows.Order creation with fixture" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/ui/e2e-flow-with-before.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/ui/fixtures-lesson-23.spec.ts" />
       <test-names>
-        <test-name value="signIn button disabled when incorrect data inserted" />
+        <test-name value="Mocked order flows" />
+        <test-name value="Order creation with fixture" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Playwright.Mocked order flows.Mocked order creation" />
-        <item itemvalue="Playwright.Not found page test" />
-        <item itemvalue="Playwright.signIn button disabled when incorrect data inserted" />
-        <item itemvalue="Playwright.Login test plus order page status button check" />
-        <item itemvalue="Playwright.Logout test" />
+        <item itemvalue="Playwright.Mocked order flows.Logout with fixture" />
+        <item itemvalue="Playwright.Mocked order flows.Not-found order with fixture" />
+        <item itemvalue="Playwright.Mocked order flows.Order creation with fixture" />
+        <item itemvalue="Playwright.Mocked order flows" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +193,18 @@
       <workItem from="1777476246602" duration="14000" />
       <workItem from="1778595219843" duration="1020000" />
       <workItem from="1778597022371" duration="112000" />
-      <workItem from="1778597147078" duration="5061000" />
+      <workItem from="1778597147078" duration="12043000" />
+      <workItem from="1778626784136" duration="43000" />
+      <workItem from="1778627429486" duration="145000" />
+      <workItem from="1778627687945" duration="21000" />
+      <workItem from="1778703688636" duration="31000" />
+      <workItem from="1778879654823" duration="36000" />
+      <workItem from="1778891153879" duration="1411000" />
+      <workItem from="1778931689527" duration="25000" />
+      <workItem from="1779053640026" duration="4185000" />
+      <workItem from="1779060560118" duration="3298000" />
+      <workItem from="1779102871564" duration="15000" />
+      <workItem from="1779108994184" duration="2421000" />
     </task>
     <servers />
   </component>
