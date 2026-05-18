@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test'
-import { faker } from '@faker-js/faker/locale/ar'
+import { faker } from '@faker-js/faker/locale/en'
 import { BasePage } from './base-page'
 import { Button } from '../atoms/Button'
 import { NotFoundPage } from './order-not-found-page'
@@ -67,4 +67,17 @@ export class OrderPage extends BasePage {
     await this.searchButton.click()
     return new OrderDetailsPage(this.page)
   }
+
+  async checkSuccessfullyCreatedPopup(visible = true): Promise<void> {
+    await expect(this.confirmationPopup).toBeVisible({ visible })
+  }
 }
+
+/*
+// test
+  async ordersMocksFallbackExample(): Promise<void> {
+    await this.page.route(`**${ENDPOINTS.ORDERS}/*`, async (route) => {
+      console.log(2)
+    })
+  }
+ */

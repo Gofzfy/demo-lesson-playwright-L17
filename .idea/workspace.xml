@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b74c1536-1233-442f-bcb3-87c2561b3a44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/TestData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/endpoints.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/jwt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pages/order-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-page.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gofzfy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gofzfy/demo-lesson-playwright-L17.git&quot;,
+    &quot;accountId&quot;: &quot;d6957269-fecf-4d44-86e1-519155cd4f07&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3CgCzJraYOCtqdaUA6OKmuvfm1A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Playwright.Homework 17: Additional tests practice.Login page input validation.executor": "Run",
+    "Playwright.Homework 17: Additional tests practice.Login page username input validation.executor": "Run",
+    "Playwright.Homework 17: Additional tests practice.executor": "Run",
+    "Playwright.Login and successful order creation.executor": "Run",
+    "Playwright.Login test + order page components check (1).executor": "Run",
+    "Playwright.Login test + order page components check.executor": "Run",
+    "Playwright.Login test plus order page components check.executor": "Run",
+    "Playwright.Login test plus order page status button check.executor": "Run",
+    "Playwright.Logout test.executor": "Run",
+    "Playwright.Mocked order flows.Mocked order creation.executor": "Run",
+    "Playwright.Not found page test.executor": "Run",
+    "Playwright.Validation test on order creation.executor": "Run",
+    "Playwright.error message displayed when incorrect credentials used.executor": "Run",
+    "Playwright.login with correct credentials and verify order creation page (1).executor": "Run",
+    "Playwright.login with correct credentials and verify order creation page.executor": "Run",
+    "Playwright.signIn button disabled when incorrect data inserted (1).executor": "Run",
+    "Playwright.signIn button disabled when incorrect data inserted.executor": "Run",
+    "Playwright.signIn.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "feat/vp/TL22",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Automation\\demo-lesson-playwright-L17\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "C:\\Automation\\demo-lesson-playwright-L17\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\demo-lesson-playwright-L17\tests\atoms" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Playwright.Mocked order flows.Mocked order creation">
+    <configuration name="Login test plus order page status button check" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/ui/e2e-auth-order-flow.spec.ts" />
+      <test-names>
+        <test-name value="Login test plus order page status button check" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Logout test" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/ui/e2e-auth-order-flow.spec.ts" />
+      <test-names>
+        <test-name value="Logout test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Mocked order flows.Mocked order creation" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" />
+      <test-names>
+        <test-name value="Mocked order flows" />
+        <test-name value="Mocked order creation" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Not found page test" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/ui/e2e-search-order.spec.ts" />
+      <test-names>
+        <test-name value="Not found page test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="signIn button disabled when incorrect data inserted" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/ui/e2e-flow-with-before.spec.ts" />
+      <test-names>
+        <test-name value="signIn button disabled when incorrect data inserted" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Playwright.Mocked order flows.Mocked order creation" />
+        <item itemvalue="Playwright.Not found page test" />
+        <item itemvalue="Playwright.signIn button disabled when incorrect data inserted" />
+        <item itemvalue="Playwright.Login test plus order page status button check" />
+        <item itemvalue="Playwright.Logout test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b74c1536-1233-442f-bcb3-87c2561b3a44" name="Changes" comment="" />
+      <created>1776798087028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776798087028</updated>
+      <workItem from="1776798088241" duration="2705000" />
+      <workItem from="1776800796194" duration="71000" />
+      <workItem from="1776800891257" duration="13563000" />
+      <workItem from="1777045629246" duration="124000" />
+      <workItem from="1777047698449" duration="7690000" />
+      <workItem from="1777299592080" duration="698000" />
+      <workItem from="1777370134947" duration="652000" />
+      <workItem from="1777376448017" duration="148000" />
+      <workItem from="1777476246602" duration="14000" />
+      <workItem from="1778595219843" duration="1020000" />
+      <workItem from="1778597022371" duration="112000" />
+      <workItem from="1778597147078" duration="5061000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
