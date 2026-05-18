@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b74c1536-1233-442f-bcb3-87c2561b3a44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/delivery.fixture.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/fixtures-lesson-23.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/playwright.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/playwright.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/env-data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pages/base-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/base-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pages/login-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/login-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pages/order-details-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-details-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pages/order-not-found-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-not-found-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pages/order-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pages/order-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/mocks-lesson-22.spec.ts" afterDir="false" />
-    </list>
+    <list default="true" id="b74c1536-1233-442f-bcb3-87c2561b3a44" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +69,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "#3 on feat/vp/TL22",
+    "git-widget-placeholder": "feat/vp/TL-23-HW",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "node.js.detected.package.eslint": "true",
@@ -204,7 +192,7 @@
       <workItem from="1779053640026" duration="4185000" />
       <workItem from="1779060560118" duration="3298000" />
       <workItem from="1779102871564" duration="15000" />
-      <workItem from="1779108994184" duration="2421000" />
+      <workItem from="1779108994184" duration="2772000" />
     </task>
     <servers />
   </component>
